@@ -1,0 +1,427 @@
+body {
+  margin: 0;
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.marquee-banner {
+  background: orange;
+  overflow: hidden;
+}
+
+.marquee-content {
+  color: #000;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0.5rem 0;
+  animation: marquee 45s linear infinite; /* MÁS LENTA */
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.hero {
+  background: url("https://raw.githubusercontent.com/serviciosbs/assets/refs/heads/main/LANDING%20GEN%C3%89RICA/WALLPAPER.jpg")
+    center/cover no-repeat;
+  padding: 5rem 1rem 3rem;
+}
+
+.logo {
+  max-width: 320px; /* ligeramente más grande */
+}
+
+.slogan {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #555;
+  margin-top: 1rem;
+}
+
+.story {
+  padding: 2rem 1rem;
+}
+
+.story h2 {
+  color: #4b5360; /* gris oxford */
+}
+
+.menu {
+  padding: 2rem 1rem;
+}
+
+.menu h2 {
+  color: #4b5360; /* gris oxford */
+}
+
+.arrow-down {
+  margin: 1rem auto;
+}
+
+.arrow-down svg {
+  margin: 0 0.3rem;
+  animation: arrowMove 1.5s infinite alternate;
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+
+.menu-carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.menu-item {
+  flex: 0 0 250px;
+  background: #222;
+  border-radius: 12px;
+  padding: 1rem;
+  scroll-snap-align: start;
+}
+
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item h3 {
+  color: #4b5360; /* gris oxford */
+}
+
+.weekly-promos,
+.events {
+  background: #111;
+  padding: 2rem 1rem;
+}
+
+.weekly-promos h2,
+.events h2 {
+  color: #4b5360; /* gris oxford */
+}
+
+.spacer {
+  height: 50px; /* separación extra */
+}
+
+.cta-button {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.socials {
+  padding: 2rem 1rem;
+}
+
+.social-title {
+  color: #4b5360; /* gris oxford */
+  font-size: 1rem; /* más pequeño */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.social-icons svg,
+.social-icons i {
+  width: 40px;
+  height: 40px;
+  stroke: #4b5360; /* gris oxford */
+}
+
+.footer-space {
+  height: 100px; /* espacio extra para subir redes al final */
+}
+
+.fire-background {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://raw.githubusercontent.com/serviciosbs/assets/refs/heads/main/fire.gif")
+    repeat-x bottom;
+  background-size: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+.marquee {
+  overflow: hidden;
+  background: orange;
+  color: black;
+  white-space: nowrap;
+}
+
+.marquee-inner {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.pedido {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.pedido h2 {
+  color: #f5f6f7; /* gris casi blanco */
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background: #25d366;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background: #1ebe5b;
+}
+.hero-cta {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.hero-cta .whatsapp-button {
+  background: #25d366;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.hero-cta .whatsapp-button:hover {
+  background: #1ebe5b;
+}
+.fire-background {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Ajusta la altura como necesites */
+  background: url("https://raw.githubusercontent.com/serviciosbs/assets/refs/heads/main/fire.gif")
+    repeat-x bottom center;
+  background-size: cover;
+  z-index: 1;
+}
+
+/* Ocultar fuego en desktop */
+@media (min-width: 768px) {
+  .fire-background {
+    display: none;
+  }
+}
+/* NUESTRAS UBICACIONES */
+.locations {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.locations h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  color: #f5f6f7; /* gris casi blanco */
+  margin-bottom: 1.5rem;
+}
+
+.location-card {
+  background: #111; /* fondo oscuro */
+  border-radius: 12px;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 300px;
+}
+
+.location-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #f5f6f7; /* gris casi blanco */
+}
+
+.location-card p {
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.btn-yellow {
+  display: inline-block;
+  background: #9fa6b2; /* gris medio */
+  color: #000;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-yellow:hover {
+  background: #8d94a1; /* gris un poco más oscuro */
+}
+
+.location-coming {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  margin: 2rem auto 0;
+  max-width: 300px;
+  border-radius: 12px;
+  font-weight: bold;
+  animation: blink 2.5s infinite ease-in-out;
+  box-shadow: 0 0 20px 5px rgba(79, 89, 105, 0.5); /* halo gris oxford */
+  text-shadow: 0 0 8px rgba(110, 120, 130, 0.8); /* brillo gris medio */
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.playlist-section {
+  padding: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.playlist-section p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.playlist-embed iframe {
+  width: 100%;
+  height: 352px;
+  border: none;
+  border-radius: 12px;
+}
+.btn-ws-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 56px;
+  height: 56px;
+  background-color: #25d366; /* verde WhatsApp */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: pulse-ws 2s infinite;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-ws-float.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.btn-ws-float:hover {
+  transform: scale(1.05);
+}
+
+.icon-ws-float {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+  /* No filter invert, ya es blanco */
+}
+
+/* Animación de pulso */
+@keyframes pulse-ws {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+.map-section {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.map-description {
+  margin-bottom: 0.75rem;
+  /* Aquí puedes poner estilos de texto, tamaño, peso, etc. */
+}
+
+.map-container {
+  width: 100%;
+  /* Para mantener proporción 4:3 */
+  aspect-ratio: 4 / 3;
+  max-width: 600px; /* opcional, para que no crezca demasiado en pantallas grandes */
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* opcional para darle profundidad */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.map-iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
