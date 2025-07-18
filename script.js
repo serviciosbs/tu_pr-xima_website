@@ -39,3 +39,22 @@ window.addEventListener("scroll", function () {
     btn.style.pointerEvents = "none";
   }
 });
+["click", "touchstart"].forEach((evt) =>
+  document.addEventListener(evt, function (e) {
+    const touch = e.touches ? e.touches[0] : e;
+    const circle = document.createElement("div");
+    circle.classList.add("touch-circle");
+
+    // ✅ Usamos pageX y pageY para que funcione con scroll
+    circle.style.left = `${touch.pageX - 40}px`;
+    circle.style.top = `${touch.pageY - 40}px`;
+
+    const colors = ["#85a840", "#0cc0df", "#fcb045", "#ff6bcb"];
+    circle.style.background = `radial-gradient(circle, ${
+      colors[Math.floor(Math.random() * colors.length)]
+    }88, transparent)`;
+
+    document.body.appendChild(circle);
+    setTimeout(() => circle.remove(), 800);
+  })
+);
