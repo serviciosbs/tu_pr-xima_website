@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antojitos el Texano</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+      .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        background-color: #25d366;
+        border-radius: 50%;
+        padding: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        animation: bounce 2s infinite;
+      }
+
+      .whatsapp-float svg {
+        width: 32px;
+        height: 32px;
+        color: white;
+      }
+
+      @keyframes bounce {
+        0%, 100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-8px);
+        }
+      }
+
+      .spotify-section,
+      .map-section,
+      .website-benefits {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #fff;
+      }
+      .spotify-section iframe,
+      .map-section iframe {
+        max-width: 100%;
+        border-radius: 12px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Marquesina -->
+    <div class="marquee">
+      <div class="marquee-inner">
+        <span>DR PEPPER GRATIS COMPRANDO DOS HAMBURGUESAS Y PAPAS / </span>
+        <span>DR PEPPER GRATIS COMPRANDO DOS HAMBURGUESAS Y PAPAS / </span>
+        <span>DR PEPPER GRATIS COMPRANDO DOS HAMBURGUESAS Y PAPAS / </span>
+        <span>DR PEPPER GRATIS COMPRANDO DOS HAMBURGUESAS Y PAPAS / </span>
+      </div>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero" style="background-image: url('https://raw.githubusercontent.com/serviciosbs/assets/refs/heads/main/LANDING%20GEN%C3%89RICA/WALLPAPER.jpg'); background-size: cover; background-position: center;">
+      <img
+        src="https://raw.githubusercontent.com/serviciosbs/assets/refs/heads/main/LANDING%20GEN%C3%89RICA/LOGO%20PLANTILLA.png"
+        alt="Antojitos El Texano Logo"
+        class="logo"
+      />
+      <h2 class="slogan">DELICIAS ESTILO TEXAS</h2>
+      <div class="hero-cta">
+        <a
+          class="whatsapp-button"
+          href="https://wa.me/528134765503?text=Hola,%20quiero%20hacer%20mi%20pedido%20en%20Antojitos%20El%20Texano"
+          target="_blank"
+          >HACER MI PEDIDO</a
+        >
+      </div>
+    </header>
+
+    <!-- Nuestra Historia -->
+    <section class="story">
+      <h2>Nuestra Historia</h2>
+      <p>
+        Desde 2012 llevamos el auténtico sabor Texano a todos nuestros clientes.
+        Somos pasión, sabor y tradición. Bienvenido a Antojitos El Texano.
+      </p>
+    </section>
+
+    <!-- Beneficios de tener web -->
+    <section class="website-benefits">
+      <p>
+        En 2025 tener un website para cualquier marca, evento o negocio es fundamental para:
+        aumentar el alcance y conversión de clientes,
+        incrementar la confianza en tu marca,
+        y demostrar presencia y seriedad. ¡El 99% de las visitas a las páginas de internet
+        se hacen desde el celular, por lo que nuestro diseño es mobile first, pero completamente
+        responsivo por aquellos que prefieren abrir la página en su PC del trabajo! 😂
+      </p>
+    </section>
+
+    <!-- Playlist Spotify -->
+    <section class="spotify-section">
+      <h2>Tu Música, Tus Vibes</h2>
+      <p> Creamos la playlist perfecta para tu página y la ponemos aquí para que tus visitantes se contagien de tus vibes (: </p>
+      <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5yaImPeBLAIgMNGM02XfGH?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+
+    <!-- Mapa -->
+    <section class="map-section">
+      <h2>¡Encuéntranos!</h2>
+      <p>Colocamos el mapa para que tus visitantes, clientes o usuarios sepan como llegar hasta tu locación.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985804.7014734913!2d-160.14803230669764!3d20.445194364055485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7bffdb064f79e005%3A0x4b7782d274cc8628!2sHawaii%2C%20USA!5e1!3m2!1sen!2smx!4v1752804137755!5m2!1sen!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Botón flotante WhatsApp -->
+    <a
+      href="https://wa.me/528134765503?text=Hola,%20quiero%20más%20información"
+      class="whatsapp-float"
+      target="_blank"
+      aria-label="WhatsApp"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="currentColor" d="M16.003 2.002C8.276 2.002 2 8.28 2 16.005c0 2.82.865 5.43 2.348 7.592L2.002 30l6.59-2.327a13.917 13.917 0 0 0 7.41 2.008c7.726 0 14.003-6.278 14.003-14.003S23.728 2.002 16.003 2.002Zm7.58 19.7c-.319.892-1.873 1.71-2.581 1.81c-.675.094-1.521.132-2.445-.154c-.562-.177-1.285-.416-2.216-.813c-3.906-1.672-6.45-5.52-6.648-5.775c-.195-.258-1.59-2.117-1.59-4.04s1.01-2.858 1.37-3.244c.358-.387.77-.484 1.028-.484c.257 0 .515.002.74.014c.237.012.556-.09.87.66c.332.777 1.124 2.687 1.223 2.884c.1.194.165.427.03.684c-.136.257-.204.416-.403.637c-.199.222-.418.49-.595.657c-.199.194-.406.407-.176.8c.23.391 1.016 1.691 2.182 2.738c1.495 1.334 2.754 1.752 3.145 1.944c.39.193.616.172.847-.102c.231-.272.974-1.13 1.235-1.523c.26-.392.518-.324.873-.194c.357.13 2.24 1.059 2.626 1.25c.386.194.645.289.74.446c.094.157.094.916-.225 1.808Z"/></svg>
+    </a>
+
+    <!-- Fire background eliminado -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+    <script>lucide.createIcons();</script>
+  </body>
+</html>
