@@ -589,39 +589,7 @@ p {
     transform: rotate(360deg);
   }
 }
-.pulse {
-  animation: pulse 1.8s ease-in-out infinite;
-}
 
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-.touch-circle {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  pointer-events: none;
-  opacity: 0.6;
-  transform: scale(0);
-  animation: ripple 0.8s ease-out forwards;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
-  z-index: 9999;
-  mix-blend-mode: screen; /* efecto más suave */
-}
-
-@keyframes ripple {
-  to {
-    transform: scale(3);
-    opacity: 0;
-  }
-}
 html,
 body {
   overflow-x: hidden;
