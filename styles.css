@@ -32,6 +32,7 @@ body {
   background: url("https://raw.githubusercontent.com/serviciosbs/assets/refs/heads/main/LANDING%20GEN%C3%89RICA/WALLPAPER.jpg")
     center/cover no-repeat;
   padding: 5rem 1rem 3rem;
+  min-height: 80vh; /* 80% del alto visible de la pantalla */
 }
 
 .logo {
@@ -40,9 +41,7 @@ body {
 
 .slogan {
   color: #fff;
-  text-transform: uppercase;
   text-shadow: 2px 2px #555;
-  margin-top: 1rem;
 }
 
 .story {
@@ -135,7 +134,7 @@ body {
 }
 
 .social-title {
-  color: #4b5360; /* gris oxford */
+  color: #acb3bd; /* gris oxford */
   font-size: 1rem; /* más pequeño */
 }
 
@@ -150,7 +149,7 @@ body {
 .social-icons i {
   width: 40px;
   height: 40px;
-  stroke: #4b5360; /* gris oxford */
+  stroke: #c3c6ca; /* gris oxford */
 }
 
 .footer-space {
@@ -248,12 +247,6 @@ body {
   z-index: 1;
 }
 
-/* Ocultar fuego en desktop */
-@media (min-width: 768px) {
-  .fire-background {
-    display: none;
-  }
-}
 /* NUESTRAS UBICACIONES */
 .locations {
   text-align: center;
@@ -424,4 +417,236 @@ body {
 p {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+/* Mantén tus estilos actuales */
+.weekly-promos,
+.events {
+  background: #111;
+  padding: 2rem 1rem;
+}
+
+/* Títulos gris Oxford */
+.weekly-promos h2,
+.events h2 {
+  color: #4b5360;
+}
+
+/* 🌟 Estilo de contorno giratorio */
+.glow-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+/* Capa luminosa animada */
+.glow-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: conic-gradient(from 0deg, #85a840, #0cc0df, #85a840);
+  animation: spin 4s linear infinite;
+  z-index: -1;
+  border-radius: 20px;
+}
+
+/* Capa interior oscura */
+.glow-card-inner {
+  background: #111;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Sección con contorno animado */
+.glow-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 0; /* eliminamos padding directo aquí */
+}
+
+/* Capa giratoria con glow */
+.glow-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(from 0deg, #85a840, #0cc0df, #85a840);
+  filter: blur(10px); /* efecto de luz difuminada */
+  animation: spin 6s linear infinite;
+  z-index: -2;
+}
+
+/* Capa extra para recortar el borde */
+.glow-card::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #111;
+  border-radius: 16px;
+  z-index: -1;
+}
+
+/* Contenido interior */
+.glow-card-inner {
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Animación */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.glow-card-inner {
+  /* ... (tus otras propiedades) ... */
+  background: rgba(17, 17, 17, 0.8); /* Fondo semitransparente */
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.glow-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 1;
+  /* Margen actualizado para añadir espacio a los lados */
+  margin: 2rem 0.5cm;
+  max-width: 600px;
+}
+
+/* Capa giratoria con glow más brillante y degradado ajustado */
+.glow-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Degradado actualizado con los colores solicitados */
+  background: conic-gradient(from 0deg, #0cc0df, #85a840, #0cc0df);
+  /* Resplandor más intenso */
+  filter: blur(20px);
+  animation: spin 6s linear infinite;
+  z-index: -2;
+}
+
+/* Capa extra para recortar el borde */
+.glow-card::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background: #111;
+  border-radius: 16px;
+  z-index: -1;
+}
+
+/* Contenido interior con fondo semitransparente */
+.glow-card-inner {
+  /* Fondo semitransparente para que se vea el glow */
+  background: rgba(17, 17, 17, 0.8);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Animación */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.pulse {
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+.touch-circle {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.6;
+  transform: scale(0);
+  animation: ripple 0.8s ease-out forwards;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.4), transparent);
+  z-index: 9999;
+  mix-blend-mode: screen; /* efecto más suave */
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+.social-icons svg {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons svg:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 6px #85a840) brightness(1.3);
+}
+.story {
+  background-image: url("https://raw.githubusercontent.com/serviciosbs/assets/refs/heads/main/LANDING%20GEN%C3%89RICA/Untitled%20desighbvbvvbvbvbgn.gif");
+  background-size: 60%; /* Solo 60% del contenedor */
+  background-repeat: no-repeat;
+  background-position: center; /* La imagen a la derecha, centrada verticalmente */
+  padding: 3rem 1.5rem;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background-color: #000000; /* Fondo de respaldo si la imagen es semitransparente */
+}
+.hero {
+  padding-top: 8rem; /* sube el valor para bajar contenido */
 }
