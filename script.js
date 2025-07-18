@@ -1,4 +1,3 @@
-// scrollAnimations.js
 ScrollReveal().reveal(".hero", {
   duration: 1000,
   origin: "top",
@@ -28,4 +27,15 @@ ScrollReveal().reveal(".socials", {
   duration: 1000,
   origin: "bottom",
   distance: "50px",
+});
+
+window.addEventListener("scroll", function () {
+  const btn = document.querySelector(".btn-ws-float");
+  if (window.scrollY > 100) {
+    btn.style.opacity = "1";
+    btn.style.pointerEvents = "auto";
+  } else {
+    btn.style.opacity = "0";
+    btn.style.pointerEvents = "none";
+  }
 });
